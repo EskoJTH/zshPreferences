@@ -76,7 +76,7 @@ source ${ZSHLIBPATH}zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
 source ${ZSHLIBPATH}zsh-tab-title/title.plugin.zsh
 
-ZSH_AUTOSUGGEST_STRATEGY=completion
+ZSH_AUTOSUGGEST_STRATEGY=history
 source ${ZSHLIBPATH}zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export ZSH=/home/esko/.zshplugins/ohmyzsh
