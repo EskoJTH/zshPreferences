@@ -97,3 +97,4 @@ source ${ZSHLIBPATH}ohmyzsh/themes/rkj-repos.zsh-theme
 
 # cols=$(tput cols)
 
+[ -f "/home/esko/.ghcup/env" ] && source "/home/esko/.ghcup/env" # ghcup-env
