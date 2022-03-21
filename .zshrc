@@ -98,3 +98,11 @@ source ${ZSHLIBPATH}ohmyzsh/themes/rkj-repos.zsh-theme
 # cols=$(tput cols)
 
 [ -f "/home/esko/.ghcup/env" ] && source "/home/esko/.ghcup/env" # ghcup-env
+
+
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init --path)"
+# eval "$(pyenv virtualenv-init -)"
+
+alias batdiff=\'~/Documents/bat-extras/src/batdiff.sh --paging=never\'
+alias batgrep=\'~/Documents/bat-extras/src/batgrep.sh --paging=never\'
