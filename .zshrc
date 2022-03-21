@@ -74,7 +74,7 @@ ZSHLIBPATH="/home/esko/.zshplugins/"
 source ${ZSHLIBPATH}zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
-source ${ZSHLIBPATH}zsh-tab-title/title.plugin.zsh
+source ${ZSHLIBPATH}zsh-tab-title/zsh-tab-title.plugin.zsh
 
 ZSH_AUTOSUGGEST_STRATEGY=history
 source ${ZSHLIBPATH}zsh-autosuggestions/zsh-autosuggestions.zsh
