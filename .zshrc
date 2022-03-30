@@ -104,6 +104,6 @@ source ${ZSHLIBPATH}ohmyzsh/themes/rkj-repos.zsh-theme
 # eval "$(pyenv init --path)"
 # eval "$(pyenv virtualenv-init -)"
 
-alias batdiff='~/Documents/bat-extras/src/batdiff.sh --paging=never'
-alias batgrep='~/Documents/bat-extras/src/batgrep.sh --paging=never'
+alias batdiff='batdiff.sh --paging=never'
+alias batgrep='batgrep.sh --paging=never'
 alias bat='batcat --paging=never'
