@@ -14,6 +14,30 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+pb-kill-line () {
+  zle kill-line   # `kill-line` is the default ctrl+k binding
+  echo -n $CUTBUFFER | xclip -selection clipboard -t text/txt
+}
+zle -N pb-kill-line  # register our new function
+bindkey '^K' pb-kill-line  # change the ctrl+k binding to use our new function
+
+pb-copy-region () {
+  zle copy-region-as-kill   # `kill-line` is the default ctrl+k binding
+  echo -n $CUTBUFFER | xclip -selection clipboard -t text/txt
+}
+zle -N pb-copy-region  # register our new function
+bindkey '^[w' pb-copy-region  # change the ctrl+k binding to use our new function
+
+pb-kill-region () {
+  zle kill-region   # `kill-line` is the default ctrl+k binding
+  echo -n $CUTBUFFER | xclip -selection clipboard -t text/txt
+}
+zle -N pb-kill-region  # register our new function
+bindkey '^W' pb-kill-region  # change the ctrl+k binding to use our new function
+
+
+
+
 # Start typing + [Up-Arrow] - fuzzy find history forward
 if [[ -n "${terminfo[kcuu1]}" ]]; then
   autoload -U up-line-or-beginning-search
@@ -107,3 +131,4 @@ source ${ZSHLIBPATH}ohmyzsh/themes/rkj-repos.zsh-theme
 alias batdiff='batdiff.sh --paging=never'
 alias batgrep='batgrep.sh --paging=never'
 alias bat='batcat --paging=never'
+
